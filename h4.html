@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 4 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-dark bg-dark lighten-4">
+  
+          <a class="navbar-brand text-white" href="#">Payroll</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
+          
+          <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-secondary" href="#"><h6>Home</h6> </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-secondary" href="#"><h6>Goals</h6></a>
+              </li>
+            </ul>
+          </div>
+  
+        </nav>
+  
+          <h3 class="text-dark">New Employee</h3>
+          <form>
+
+    <div class="container-fluid my-2">
+        <div class="container-fluid my-2">
+            <div class="row">
+
+                <div class="col-md">
+                    <label for="Name1" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="Name1">
+                </div>
+
+                <div class="col-md">
+                    <label for="Name2" class="form-label">Middle Name</label>
+                    <input type="text" class="form-control" id="Name2">
+                </div>
+
+                <div class="col-md">
+                    <label for="Name3" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="Name3">
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container-fluid my-2">
+            <div class="row">
+                <div class="col-md">
+                    <label for="addr1" class="form-label">Address Line 1</label>
+                    <input type="text" class="form-control" id="addr1">
+                </div>
+                <div class="col-md">
+                    <label for="addr2" class="form-label">Address Line 2</label>
+                    <input type="text" class="form-control" id="addr2">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid my-2">
+            <div class="row">
+                <div class="col-md">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+
+                <div class="col-md">
+                    <label for="pass1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="pass1">
+                </div>
+                <div class="col-md">
+                    <label for="pass2" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="pass2">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-2">
+
+            <div class="row">
+
+                <div class="col-md">
+                    <label for="deptName" class="form-label">Department</label>
+                    <select id="deptName" class="form-control">
+                        <option></option>
+                        <option>CS</option>
+                        <option>IT</option>
+                        <option>Mech</option>
+                        <option>entc</option>
+                    </select>
+                </div>
+
+                <div class="col-md">
+                    <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                    <input type="text" class="form-control" id="dateOfBirth">
+                </div>
+
+                <div class="col-md">
+
+                    <label for="gender" class="form-label">Gender</label>
+                    <div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male"
+                                value="option1">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female"
+                                value="option2">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <label for="empStatus">Permenent</label>
+                    <div class="form-check checkbox">
+                        <input type="checkbox" class="form-check-input position-static" id="empStatus" value="status"
+                            aria-label="...">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluidmy-2 my-2">
+        <button type="submit" class="btn btn-success" value="Save">Save</button>
+    </div>
+
+
+
+
+
+    </div>
+</form>
+
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+    <script>
+
+        $('#dateOfBirth').datepicker({
+
+            uiLibrary: 'bootstrap4',
+
+            format: 'dd/mm/yyyy'
+
+        });
+
+    </script>
+</body>
+
+</html>
